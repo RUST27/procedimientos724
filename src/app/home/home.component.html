@@ -1,30 +1,43 @@
+<!-- src/app/image-section/image-section.component.html -->
 <!-- src/app/header/header.component.html -->
-<header class="bg-gradient-to-r from-blue-500 to-blue-600 text-white">
+<!-- src/app/header/header.component.html -->
+<header class="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white shadow-lg">
   <div class="container mx-auto px-6 py-12 text-center">
-    <h1 class="text-3xl md:text-4xl font-extrabold mb-4 animate-fade-in">Políticas y Procedimientos</h1>
-    <p class="text-sm md:text-base mb-6">
+    <h1 class="text-3xl md:text-4xl font-extrabold mb-4 animate-fade-in shadow-lg">
+      Políticas y Procedimientos
+    </h1>
+    <p class="text-sm md:text-base mb-6 leading-relaxed shadow-md">
       Accede a los documentos y políticas oficiales de nuestra empresa. Consulta y descarga toda la información relevante para estar al tanto de nuestros procedimientos.
       Es importante que todos los empleados estén informados sobre las normativas internas para asegurar un entorno de trabajo seguro y eficiente.
       Aquí encontrarás documentos que cubren una amplia gama de temas, desde la política de privacidad hasta los procedimientos de seguridad, garantizando que todos comprendan sus responsabilidades y derechos dentro de la empresa.
     </p>
-    <a href="/documentos" class="bg-orange-500 text-white font-semibold px-4 py-2 rounded transition duration-200 hover:bg-orange-600">Ver Más</a>
+    <a href="/documentos" class="bg-orange-500 text-white font-semibold px-4 py-2 rounded transition duration-200 hover:bg-orange-600 transform hover:scale-105 inline-block shadow-md">
+      Ver Más
+    </a>
   </div>
+  <div class="h-2 bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500"></div>
 </header>
 
 
- <!-- src/app/image-section/image-section.component.html -->
-<!-- Image Section -->
+
+
+
 <!-- src/app/image-section/image-section.component.html -->
 <!-- Image Section -->
 <section class="container mx-auto px-6 py-12">
-  <div class="mb-8">
-    <img src="Doc1.png" alt="Descripción de la primera imagen" class="w-full h-auto max-w-md md:max-w-lg lg:max-w-2xl mx-auto rounded-lg shadow-lg">
-    <p class="mt-4 text-center text-sm md:text-base text-gray-700">Descripción sobre procedimientos de la primera imagen.</p>
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-bold text-blue-900">Diagrama de Documentos</h2>
+    <p class="text-gray-600">Aquí se muestran los documentos con su descripción y tipo de documento. Este diagrama visualiza los tipos de documentos disponibles y proporciona una referencia rápida para entender su contenido y propósito.</p>
   </div>
   <div class="mb-8">
-    <img src="Doc2.png" alt="Descripción de la segunda imagen" class="w-full h-auto max-w-md md:max-w-lg lg:max-w-2xl mx-auto rounded-lg shadow-lg">
-    <p class="mt-4 text-center text-sm md:text-base text-gray-700">Descripción sobre procedimientos de la segunda imagen.</p>
+    <a href="Doc1.png" class="glightbox">
+      <img src="Doc1.png" alt="Descripción de la primera imagen" class="w-full h-auto max-w-md md:max-w-lg lg:max-w-2xl mx-auto rounded-lg shadow-lg">
+    </a>
+  </div>
+  <div class="mb-8">
+    <a href="Doc2.png" class="glightbox">
+      <img src="Doc2.png" alt="Descripción de la segunda imagen" class="w-full h-auto max-w-md md:max-w-lg lg:max-w-2xl mx-auto rounded-lg shadow-lg">
+    </a>
   </div>
 </section>
-
 
