@@ -1,0 +1,28 @@
+<!-- src/app/navbar/navbar.component.html -->
+<nav class="bg-gradient-to-r from-blue-950 to-blue-900 shadow-md">
+  <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+    <a routerLink="/" class="text-white text-xl flex items-center">
+      <img src="logo724web.png" alt="7/24 Logo" class="h-16 inline">
+      7/24 MIX
+    </a>
+    <div class="hidden md:flex space-x-4">
+      <a routerLink="/" class="text-white mx-4">Home</a>
+      <a routerLink="/documentos" class="text-white mx-4">Documentos</a>
+      <!-- Puedes agregar más enlaces aquí -->
+      <!-- <a routerLink="/about" class="text-white mx-4">About</a> -->
+    </div>
+    <div class="md:hidden">
+      <button (click)="toggleMenu()" class="text-white focus:outline-none">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div [ngClass]="{'block': isMenuOpen, 'hidden': !isMenuOpen}" class="md:hidden">
+    <a routerLink="/" class="block text-white px-4 py-2">Home</a>
+    <a routerLink="/documentos" class="block text-white px-4 py-2">Documentos</a>
+    <!-- Puedes agregar más enlaces aquí -->
+    <!-- <a routerLink="/about" class="block text-white px-4 py-2">About</a> -->
+  </div>
+</nav>

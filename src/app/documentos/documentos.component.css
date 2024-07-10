@@ -1,0 +1,14 @@
+.document-box {
+  min-height: 400px; /* Ajusta esta altura según sea necesario */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.document-content {
+  flex-grow: 1;
+}
+
+.document-download {
+  margin-top: auto;
+}
